@@ -1,6 +1,9 @@
 name: Workflow Demo
-
-on: [commit]
+on:
+  push:
+    branches:
+      - main
+      - 'features/**'
 
 jobs:
   build:
